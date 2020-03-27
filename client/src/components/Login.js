@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from 'axios';
 
+//set state
 const Login = (props) => {
   const [newUser, setNewUser] = useState({
     username: '',
@@ -31,6 +32,7 @@ const handleChange = (e) => {
         })
 }
 
+//login form
   return (
     <div className="topLoginDiv">
       <h1>Bubble App</h1>

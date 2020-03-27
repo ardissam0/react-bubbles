@@ -9,12 +9,13 @@ import "./styles.scss";
 function App() {
   return (
     <Router>
+      {/* added links to and private route to bubblepage */}
       <div className="App">
         <Link style={{fontWeight: 'bold', textDecoration: "none",}} to= '/login'> LOGIN </Link>
-        <Link style={{fontWeight: 'bold', textDecoration: "none", marginLeft: "4%",}}to= '/bubble-page'> BubblePage </Link>
+        <Link style={{fontWeight: 'bold', textDecoration: "none", marginLeft: "4%",}}to= '/'> BubblePage </Link>
           <Route path="/login" component={Login} />
         <Switch>
-          <PrivateRoute exact path='/bubble-page' component={BubblePage} />
+          <PrivateRoute exact path='/' component={BubblePage} />
         </Switch>
       </div>
     </Router>

@@ -25,8 +25,6 @@ const ColorList = ({ colors, updateColors }) => {
   const saveEdit = e => {
     e.preventDefault();
     // Make a put request to save your updated color
-    // think about where will you get the id from...
-    // where is is saved right now?
     e.preventDefault();
     console.log('colorToEdit', colorToEdit)
     axiosWithAuth()
@@ -73,6 +71,7 @@ const ColorList = ({ colors, updateColors }) => {
         })
   };
 
+  //stretch add color post request
   const addColor = (e) => {
     e.preventDefault();
     console.log(newColor)
