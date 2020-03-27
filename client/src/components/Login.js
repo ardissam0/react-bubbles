@@ -13,7 +13,7 @@ const handleChange = (e) => {
   console.log(newUser)
 }
   // make a post request to retrieve a token from the api
-    // when you have handled the token, navigate to the BubblePage route
+  // when you have handled the token, navigate to the BubblePage route
   const login = (e) => {
     e.preventDefault()
     console.log(newUser)
