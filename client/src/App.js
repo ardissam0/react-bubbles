@@ -4,7 +4,6 @@ import { Switch, Link } from 'react-router-dom';
 import BubblePage from './components/BubblePage';
 import Login from "./components/Login";
 import PrivateRoute from './components/PrivateRoute';
-import ColorList from './components/ColorList';
 import "./styles.scss";
 
 function App() {
