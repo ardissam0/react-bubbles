@@ -32,26 +32,28 @@ const handleChange = (e) => {
 }
 
   return (
-    <>
-      <h1>Welcome to the Bubble App!</h1>
-      <div>
+    <div className="topLoginDiv">
+      <h1>Bubble App</h1>
+      <div className="loginDiv">
               <form onSubmit={e => login(e)}>
                 <div>Username:</div>
                   <input
                       type="text"
                       name="username"
+                      placeholder="Username"
                       onChange={e => handleChange(e)} />
                   <br></br>
                   <div>Password:</div>
                   <input
                       type='text'
                       name='password'
+                      placeholder="Password"
                       onChange={e => handleChange(e)} />
                   <br></br>
                   <button type='submit'> Login </button>
               </form>
           </div>
-    </>
+    </div>
   );
 };
 
